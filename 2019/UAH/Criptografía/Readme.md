@@ -47,19 +47,19 @@ Sin embargo, vamos a darle una vuelta y realizar suposiciones. ¿Y si el texto f
 
 Bien, claro que se pueden dar esos casos, por lo que también se decidió abordar el reto usando OCR y creando modelos de entrenamiento para detectar los símbolos:
 
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/symbolDetection" width=350>
+<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/master/2019/UAH/Criptograf%C3%ADa/Images/symbolDetection.png" width=350>
 
 Ahora podemos realizar una asignación manual para realizar el modelo de entrenamiento:
 
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/mapSymbols" width=350>
+<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/master/2019/UAH/Criptograf%C3%ADa/Images/mapSymbols.png" width=350>
 
 Y finalmente, elaboramos el script usando OCR para interpretar los símbolos de la imagen:
 
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/scriptOcr" width=350>
+<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/master/2019/UAH/Criptograf%C3%ADa/Images/scriptOcr.png" width=350>
 
 Dándonos como resultado:
 
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/resultOcr" width=350>
+<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/master/2019/UAH/Criptograf%C3%ADa/Images/resultOcr.png" width=350>
 
 Verificamos que efectivamente obtenemos el mismo resultado que el mencionado anteriormente. Ahora si que sí ;)
 
@@ -232,7 +232,7 @@ A pesar de haber realizado correctamente el XOR, el vídeo como tal no dice gran
 
 Y obtenemos:
 
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/pistaXOR.jpg" width=350>
+<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/master/2019/UAH/Criptograf%C3%ADa/Images/pistaXOR.jpg" width=350>
 
 El texto: `Si nos pinchan, ¿acaso no sangramos?`
 
@@ -266,28 +266,24 @@ La captura en sí, tiene el centro de frecuencias en 106.52 MHz, pero aún así,
 
 Si representamos la potencia en frecuencia:
 
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/waterfall1.jpg" width=350>
+<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/master/2019/UAH/Criptograf%C3%ADa/Images/waterfall.jpg" width=350>
 
 En la gráfica las frecuencias están representadas en banda base.
 
 Lo que podemos ver, es que habrá que desplazarnos para poder sintonizar en la señal portadora y poder demodular correctamente la señal. Para ello, utilizaremos GNU Radio:
 
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/flowgraph.png" width=350>
+<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/master/2019/UAH/Criptograf%C3%ADa/Images/flowgraph.png" width=350>
 
 De manera resumida, lo que hace es, obtener la fuente del archivo .wav, procesarlo, demodularlo y volcarlo a un archivo `.mp3`.
 
 Aspectos a entender del flowgraph del GNU Radio. Las frecuencias de muestreo no son han tomado aleatoriamente, hay que coger las frecuencias utilizadas en el archivo .wav porque sino estaremos destruyendo la señal
 
-Para desplazar la señal y sintonizarla, multiplicamos por una señal seno en la frecuencia deseada. En nuestro caso 107MHz de manera aproximada: 
+Para desplazar la señal y sintonizarla, multiplicamos por una señal seno en la frecuencia deseada. En nuestro caso 107MHz de manera aproximada. Como veis, ahora si se encuentra sintonizada:
 
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/tuned.png" width=350>
-
-Como veis, ahora si se encuentra sintonizada:
-
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/waterfall2.png" width=350>
+<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/master/2019/UAH/Criptograf%C3%ADa/Images/waterfall2.png" width=350>
 
 Si observamos el espectrograma del archivo `.mp3` obtenido:
 
-<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/2019/UAH/Criptografia/Images/spectrogram.png" width=350>
+<img src="https://raw.githubusercontent.com/M3moryLeaks/ctf/master/2019/UAH/Criptograf%C3%ADa/Images/spectrogram.png" width=350>
 
 **Flag:** flag{lord_chinggis}
