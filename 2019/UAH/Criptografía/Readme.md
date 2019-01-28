@@ -88,7 +88,7 @@ Texto en claro:
 
 **Flag:** flag{hackandbeers}
 
-####Cryptography is not steganography (150pts)
+#### Cryptography is not steganography (150pts)
 
 ##### Descripción:
 
