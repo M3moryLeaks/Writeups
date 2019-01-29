@@ -182,7 +182,7 @@ Este reto web, tenía una parte de esteganografía, ya que en función del núme
 Buscando patrones en las respuestas, se detectó un rango de números de manera secuencias, recibía en la respuesta HTML el código 500, que restando este valor al `HTTP CODE` de la respuesta da como resultado a un caracter en formato decimal. Por ejemplo:
 
 |  HTTP CODE | HTML CODE  | Diferencia  | ASCII  |
-|---|---|---|---|---|
+|---|---|---|---|
 | 602  | 500  | 102  | f |
 
 El que empiece por `f` nos da buenas señales, ya que las flags comienzan por `flag{`. Siguiendo esta misma lógica, se creó el siguiente script:
