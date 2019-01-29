@@ -31,7 +31,7 @@ Hemos recibido un mensaje alienígena!! ¿Nos puedes ayudar a entenderlo?
 
 ##### Solución:
 
-En este caso, si el lenguaje es conocido, ya no se trata de un reto de criptografía sino de traducción, y puesto que en este caso, la [simbología es conocida](https://theinfosphere.org/Alien_languages). Haremos caso omiso a esta información, y procederemos a analizarlo.
+En este caso, si el lenguaje es conocido, ya no se trata de un reto de criptografía sino de traducción, y puesto que en este caso, la [simbología es conocida](https://theinfosphere.org/Alien_languages), haremos caso omiso a esta información, y procederemos a analizarlo.
 
 Se trata de un cifrado de sustitución simple, por lo que asignando a cada símbolo una letra, obtenemos:
 
@@ -41,7 +41,7 @@ Haciendo un [análisis estadístico](https://quipqiup.com/) con diccionario ingl
 
 `planet express uah`
 
-Dado que no hay caracteres suficientes como para realizar un análisis estadístico que recupere el texto 100%, en lo referente a los 3 últimos caracteres, `uah`, ahí jugo el papel del guessing y del sentido común.
+Dado que no hay caracteres suficientes como para realizar un análisis estadístico que recupere el texto 100%, en lo referente a los 3 últimos caracteres, `uah`, ahí jugó el papel del guessing y del sentido común.
 
 Sin embargo, vamos a darle una vuelta y realizar suposiciones. ¿Y si el texto fuese enorme? ¿Y si no se pudiera extraerlo con facilidad?
 
