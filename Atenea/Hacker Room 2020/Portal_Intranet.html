@@ -1,0 +1,29 @@
+<html class=" lazyykdk idc0_326"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>Industrias Aeroespaciales Avanzadas</title></head><body>
+<title>User login (test portal)</title>
+<link rel="icon" type="image/png" href="http://192.168.10.76/favicon.png">
+<script src="Portal_Intranet_files/jquery.js"></script>
+
+
+    <div style="height: 200px;width: 400px;position: fixed;top: 50%;left: 50%;margin-top: -100px;margin-left: -200px;">
+    <table><tbody><tr><td>
+    <div style="align-items:center;display:flex">
+        <img src="Portal_Intranet_files/intranet.png" style="float:left;vertical-align: middle" height="180px">
+        <h1 style="float:left;vertical-align: middle;margin-left:10px">INTRANET</h1>
+    </div></td></tr>
+    <tr><td>
+    <div class="cont" style="margin-left: 75px;">
+            <form id="login-form" method="post" action="javascript:check(username.value, userpwd.value)">
+                <table><tbody><tr><td><label style="font-weight:bold;">Usuario: </label></td>
+                <td><input type="text" name="username" id="username" value="admin"></td></tr>
+                <tr><td style="padding-top: 10px"><label style="font-weight:bold;">Clave:</label></td>
+                <td><input type="password" name="userpwd" id="userpwd" style="margin-top: 10px"></td></tr>
+                <tr><td><input type="submit" value="Submit" id="submit" style="margin-top: 10px"></td></tr></tbody></table>
+            </form>
+            <script type="text/javascript">
+                // user: admin
+                function check(e,t){if(pieceA=String.fromCharCode(parseInt("9"+([..."..."].length+4))),pieceB=parseInt("s*t"),pieceC=(([]+!0)[+[]]+(!0+[])[+!+[]]+(!1+[])[+!+[]]+(!1+[])[+[]]+([]+!1)[+[]]+([!0]+[][[]])[+!+[]+[+[]]-+!+[]]+(typeof[])[!+[]+!+[]+!+[]+!+[]])[2],"b"+pieceA+ +"password"+pieceB+pieceC==t){const n=new XMLHttpRequest;n.open("GET","/files",!1,e,t),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(window.location="/files")},n.send()}}
+            </script>
+</div></td></tr></tbody></table></div>
+
+</body></html>
